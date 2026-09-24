@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-24",
+  "repository": "yibie/jev-engineering-zh",
+  "revision": "3754a0cba2d32d3fdaedffa15b16ee32e1c56ef9",
+  "review_scope": "Both complete English text transcriptions and all seven figure captions were read through the GitHub connector. The supplied cover image was visually examined. PDF bytes and remaining figure pixels were not available in the local execution environment.",
+  "binary_download_status": "blocked_by_local_DNS",
+  "rights": "The mirror's CC BY 4.0 statement applies to its translation/figures; no broad relicensing of the English source PDFs is assumed. Link and locally retrieve for study; do not vendor into this repository without checking rights.",
+  "author_notes_live_url": "https://docs.google.com/document/d/1G61uUB0FifUnmmrPzFQojZ3KpczYKmXGpgEXDJ2l_Zg/edit",
+  "documents": [
+    {
+      "id": "synthesis",
+      "title": "Jev Engineering for Coding Agents",
+      "attribution": "Independent compiler; based on design notes by Diogo Almeida. Explicitly not affiliated with or endorsed by TypeSafe.",
+      "pages_reported": 12,
+      "path": "assets/original.pdf",
+      "filename": "jev-engineering-synthesis.pdf",
+      "size_bytes": 164476,
+      "git_blob_sha": "6088899c3a7447eab364f227bea19310470e837a",
+      "transcript_path": "assets/original-text.txt",
+      "transcript_git_blob_sha": "2dec62ca98190c4e3d3b096ca2552dda56abfdcb"
+    },
+    {
+      "id": "design-notes",
+      "title": "[public] thoughts on a typesafe coding agent",
+      "attribution": "Design notes attributed to Diogo Almeida; read from the mirror's English export, not a newly fetched live Google Doc.",
+      "pages_reported": 11,
+      "path": "source-notes/original.pdf",
+      "filename": "typesafe-coding-agent-design-notes.pdf",
+      "size_bytes": 1046436,
+      "git_blob_sha": "76b981d9107c02574801ac29a62e8d3a7e554a2c",
+      "transcript_path": "source-notes/original.txt",
+      "transcript_git_blob_sha": "f2127ec9ed72350701e0bcace1bb32c1dc266492"
+    }
+  ]
+}
