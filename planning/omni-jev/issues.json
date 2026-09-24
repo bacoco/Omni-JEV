@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "target_repository": "bacoco/Omni-JEV",
+  "prepared_at": "2026-09-24",
+  "publication_status": "not_published",
+  "issues": [
+    {
+      "id": "OJ-001",
+      "priority": "P0",
+      "title": "[P0] Audit and pin candidate models, processors, licenses, and reusable code",
+      "body_file": "planning/omni-jev/issues/OJ-001.md",
+      "depends_on": [],
+      "experiments": [
+        "E00"
+      ]
+    },
+    {
+      "id": "OJ-002",
+      "priority": "P0",
+      "title": "[P0] Specify and test Noul, Choice, and Score contracts",
+      "body_file": "planning/omni-jev/issues/OJ-002.md",
+      "depends_on": [],
+      "experiments": []
+    },
+    {
+      "id": "OJ-003",
+      "priority": "P0",
+      "title": "[P0] Build the leakage-resistant dataset and evaluation protocol",
+      "body_file": "planning/omni-jev/issues/OJ-003.md",
+      "depends_on": [
+        "OJ-002"
+      ],
+      "experiments": [
+        "E01",
+        "E03",
+        "E09",
+        "E10"
+      ]
+    },
+    {
+      "id": "OJ-004",
+      "priority": "P0",
+      "title": "[P0] Implement a native-processing multimodal state adapter",
+      "body_file": "planning/omni-jev/issues/OJ-004.md",
+      "depends_on": [
+        "OJ-001",
+        "OJ-002"
+      ],
+      "experiments": [
+        "E00",
+        "E06"
+      ]
+    },
+    {
+      "id": "OJ-005",
+      "priority": "P0",
+      "title": "[P0] Establish global-embedding, text-pipeline, and existing-model baselines",
+      "body_file": "planning/omni-jev/issues/OJ-005.md",
+      "depends_on": [
+        "OJ-003",
+        "OJ-004"
+      ],
+      "experiments": [
+        "E01",
+        "E02",
+        "E03",
+        "E04"
+      ]
+    },
+    {
+      "id": "OJ-006",
+      "priority": "P1",
+      "title": "[P1] Add a BERT-like dynamic question and option encoder",
+      "body_file": "planning/omni-jev/issues/OJ-006.md",
+      "depends_on": [
+        "OJ-002",
+        "OJ-004",
+        "OJ-005"
+      ],
+      "experiments": [
+        "E05"
+      ]
+    },
+    {
+      "id": "OJ-007",
+      "priority": "P1",
+      "title": "[P1] Implement discriminatively trained ColBERT-style late interaction",
+      "body_file": "planning/omni-jev/issues/OJ-007.md",
+      "depends_on": [
+        "OJ-006"
+      ],
+      "experiments": [
+        "E06",
+        "E07"
+      ]
+    },
+    {
+      "id": "OJ-008",
+      "priority": "P1",
+      "title": "[P1] Compare a small cross-attention decision module with MaxSim",
+      "body_file": "planning/omni-jev/issues/OJ-008.md",
+      "depends_on": [
+        "OJ-006",
+        "OJ-007"
+      ],
+      "experiments": [
+        "E07"
+      ]
+    },
+    {
+      "id": "OJ-009",
+      "priority": "P1",
+      "title": "[P1] Build staged supervised fine-tuning and reproducibility tooling",
+      "body_file": "planning/omni-jev/issues/OJ-009.md",
+      "depends_on": [
+        "OJ-007",
+        "OJ-008"
+      ],
+      "experiments": [
+        "E08"
+      ]
+    },
+    {
+      "id": "OJ-010",
+      "priority": "P1",
+      "title": "[P1] Evaluate audiovisual relationships and temporal counterfactuals",
+      "body_file": "planning/omni-jev/issues/OJ-010.md",
+      "depends_on": [
+        "OJ-003",
+        "OJ-004",
+        "OJ-005"
+      ],
+      "experiments": [
+        "E09"
+      ]
+    },
+    {
+      "id": "OJ-011",
+      "priority": "P1",
+      "title": "[P1] Calibrate outputs and define evidence-aware abstention",
+      "body_file": "planning/omni-jev/issues/OJ-011.md",
+      "depends_on": [
+        "OJ-009",
+        "OJ-010"
+      ],
+      "experiments": [
+        "E10"
+      ]
+    },
+    {
+      "id": "OJ-012",
+      "priority": "P2",
+      "title": "[P2] Measure compression, cache economics, and compact alternatives",
+      "body_file": "planning/omni-jev/issues/OJ-012.md",
+      "depends_on": [
+        "OJ-009",
+        "OJ-010",
+        "OJ-011"
+      ],
+      "experiments": [
+        "E11",
+        "E12"
+      ]
+    },
+    {
+      "id": "OJ-000",
+      "priority": "P0",
+      "title": "[Plan] Omni-JEV: project synthesis and experiment roadmap",
+      "body_file": "planning/omni-jev/issues/OJ-000.md",
+      "depends_on": [],
+      "experiments": []
+    }
+  ]
+}
