@@ -11,6 +11,8 @@ dependencies = ["pydantic>=2.12,<3"]
 
 [project.optional-dependencies]
 test = ["pytest>=8,<10", "jsonschema>=4.23,<5"]
+# Candidate runtime range, not a claim that all versions were tested.
+prefix = ["torch>=2.6,<3", "transformers>=4.57,<6", "safetensors>=0.5,<1"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
