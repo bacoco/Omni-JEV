@@ -1,14 +1,17 @@
 {
   "prepared_at": "2026-09-24",
+  "published_at": "2026-09-24",
   "target_repository": "bacoco/Omni-JEV",
-  "remote_commit_created": false,
-  "remote_issues_created": 0,
+  "remote_commit_created": true,
+  "remote_issues_created": 13,
+  "remote_issues_read_back": 13,
   "local_issue_drafts": 13,
   "local_helper_tests_passed": 11,
-  "tests_scope": "Offline publication-helper tests with fake GitHub responses; no model or live GitHub tests.",
-  "relative_links_checked": 48,
+  "tests_scope": "Offline publication-helper unit tests. Remote publication separately verified through the GitHub connector; no model tests.",
+  "relative_links_checked": 50,
   "relative_link_errors": 0,
+  "original_import_tree_matches": true,
   "model_inference_runs": 0,
   "model_training_runs": 0,
-  "artifact_status": "Ready-to-review local documentation and issue drafts; authentication needed for remote publication."
+  "artifact_status": "Published modular documentation, publication tooling, and 13 linked issues; model development remains planned."
 }

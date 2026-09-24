@@ -1,23 +1,23 @@
 # Prioritized development backlog
 
-Status: 13 local issue drafts, not published GitHub issues. Stable planning IDs do not represent actual GitHub issue numbers. Each draft includes scope, dependencies, acceptance criteria, and expected evidence.
+Status: all 13 planning issues have been published. Task issues are #1 through #12; the synthesis is #13. Stable planning IDs remain distinct from GitHub issue numbers. Each task includes scope, dependencies, acceptance criteria, and expected evidence.
 
-The [project synthesis](issues/OJ-000.md) is the self-contained umbrella issue.
+The [project synthesis](https://github.com/bacoco/Omni-JEV/issues/13) is the self-contained umbrella issue. Versioned local drafts remain under `issues/`.
 
 | Planning ID | Priority | Issue | Dependencies |
 |---|---|---|---|
-| OJ-001 | P0 | [Audit and pin candidate models, processors, licenses, and reusable code](issues/OJ-001.md) | None |
-| OJ-002 | P0 | [Specify and test Noul, Choice, and Score contracts](issues/OJ-002.md) | None |
-| OJ-003 | P0 | [Build the leakage-resistant dataset and evaluation protocol](issues/OJ-003.md) | OJ-002 |
-| OJ-004 | P0 | [Implement a native-processing multimodal state adapter](issues/OJ-004.md) | OJ-001, OJ-002 |
-| OJ-005 | P0 | [Establish global-embedding, text-pipeline, and existing-model baselines](issues/OJ-005.md) | OJ-003, OJ-004 |
-| OJ-006 | P1 | [Add a BERT-like dynamic question and option encoder](issues/OJ-006.md) | OJ-002, OJ-004, OJ-005 |
-| OJ-007 | P1 | [Implement discriminatively trained ColBERT-style late interaction](issues/OJ-007.md) | OJ-006 |
-| OJ-008 | P1 | [Compare a small cross-attention decision module with MaxSim](issues/OJ-008.md) | OJ-006, OJ-007 |
-| OJ-009 | P1 | [Build staged supervised fine-tuning and reproducibility tooling](issues/OJ-009.md) | OJ-007, OJ-008 |
-| OJ-010 | P1 | [Evaluate audiovisual relationships and temporal counterfactuals](issues/OJ-010.md) | OJ-003, OJ-004, OJ-005 |
-| OJ-011 | P1 | [Calibrate outputs and define evidence-aware abstention](issues/OJ-011.md) | OJ-009, OJ-010 |
-| OJ-012 | P2 | [Measure compression, cache economics, and compact alternatives](issues/OJ-012.md) | OJ-009, OJ-010, OJ-011 |
+| OJ-001 | P0 | [Audit and pin candidate models, processors, licenses, and reusable code](https://github.com/bacoco/Omni-JEV/issues/1) | None |
+| OJ-002 | P0 | [Specify and test Noul, Choice, and Score contracts](https://github.com/bacoco/Omni-JEV/issues/2) | None |
+| OJ-003 | P0 | [Build the leakage-resistant dataset and evaluation protocol](https://github.com/bacoco/Omni-JEV/issues/3) | OJ-002 |
+| OJ-004 | P0 | [Implement a native-processing multimodal state adapter](https://github.com/bacoco/Omni-JEV/issues/4) | OJ-001, OJ-002 |
+| OJ-005 | P0 | [Establish global-embedding, text-pipeline, and existing-model baselines](https://github.com/bacoco/Omni-JEV/issues/5) | OJ-003, OJ-004 |
+| OJ-006 | P1 | [Add a BERT-like dynamic question and option encoder](https://github.com/bacoco/Omni-JEV/issues/6) | OJ-002, OJ-004, OJ-005 |
+| OJ-007 | P1 | [Implement discriminatively trained ColBERT-style late interaction](https://github.com/bacoco/Omni-JEV/issues/7) | OJ-006 |
+| OJ-008 | P1 | [Compare a small cross-attention decision module with MaxSim](https://github.com/bacoco/Omni-JEV/issues/8) | OJ-006, OJ-007 |
+| OJ-009 | P1 | [Build staged supervised fine-tuning and reproducibility tooling](https://github.com/bacoco/Omni-JEV/issues/9) | OJ-007, OJ-008 |
+| OJ-010 | P1 | [Evaluate audiovisual relationships and temporal counterfactuals](https://github.com/bacoco/Omni-JEV/issues/10) | OJ-003, OJ-004, OJ-005 |
+| OJ-011 | P1 | [Calibrate outputs and define evidence-aware abstention](https://github.com/bacoco/Omni-JEV/issues/11) | OJ-009, OJ-010 |
+| OJ-012 | P2 | [Measure compression, cache economics, and compact alternatives](https://github.com/bacoco/Omni-JEV/issues/12) | OJ-009, OJ-010, OJ-011 |
 
 ## Suggested phases
 

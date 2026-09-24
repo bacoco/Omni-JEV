@@ -1,0 +1,97 @@
+{
+  "repository": "bacoco/Omni-JEV",
+  "branch": "main",
+  "published_on": "2026-09-24",
+  "method": "Authenticated GitHub connector; no CLI credentials or tokens were copied.",
+  "completed": true,
+  "import_commit": "80ab20943ae7c6b816ffe6163ea031963333c954",
+  "import_tree": "a860478c2f2433f4d9232290ad8fd7f9d78d9c02",
+  "imported_modular_files": 27,
+  "import_integrity": "Exact Git tree match between local prepared files and the uploaded tree before publication-status updates.",
+  "issues_created": 13,
+  "issues_read_back": 13,
+  "issue_verification": "All titles, stable markers, bodies, and dependency links were returned by a subsequent repository-scoped GitHub issue search.",
+  "standalone_export_handling": "The consolidated dossier is fully represented by the modular documentation and issue drafts; the duplicate standalone export is not committed.",
+  "model_inference_runs": 0,
+  "model_training_runs": 0,
+  "items": [
+    {
+      "id": "OJ-001",
+      "number": 1,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/1",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-002",
+      "number": 2,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/2",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-003",
+      "number": 3,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/3",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-004",
+      "number": 4,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/4",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-005",
+      "number": 5,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/5",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-006",
+      "number": 6,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/6",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-007",
+      "number": 7,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/7",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-008",
+      "number": 8,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/8",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-009",
+      "number": 9,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/9",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-010",
+      "number": 10,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/10",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-011",
+      "number": 11,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/11",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-012",
+      "number": 12,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/12",
+      "action": "created_verified"
+    },
+    {
+      "id": "OJ-000",
+      "number": 13,
+      "url": "https://github.com/bacoco/Omni-JEV/issues/13",
+      "action": "created_verified"
+    }
+  ]
+}

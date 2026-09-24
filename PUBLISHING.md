@@ -2,9 +2,9 @@
 
 ## Current state
 
-This package contains English documentation, 13 local issue drafts, a machine-readable issue manifest, and an optional publication helper. **No file has been committed and no issue has been created on `bacoco/Omni-JEV` by this package's preparation.** Authenticated access was not available, and unauthenticated repository inspection did not establish the existing contents or branch.
+The initial documentation and publication tooling have been committed to `main` in `bacoco/Omni-JEV`, and all 13 issues have been created through the authenticated GitHub integration. The repository was inspected and found empty before initialization. Existing issue searches were empty before publication. No repository settings, license, labels, or assignees were changed.
 
-Do not assume the repository is empty. Preserve existing work and review file conflicts before committing. No license or repository setting is changed by this package.
+See [PUBLICATION_RESULT.json](PUBLICATION_RESULT.json) for the real issue URLs and verification record. Preparation-only status is preserved in Git history. The following instructions remain useful for future imports or other repositories; preserve existing work and review conflicts before writing.
 
 ## Route A: authenticated GitHub integration
 

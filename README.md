@@ -8,6 +8,8 @@ The target is a question-conditioned, non-generative decision model. Encode an i
 
 ## Start here
 
+- [Published project synthesis and issue tracker](https://github.com/bacoco/Omni-JEV/issues/13)
+
 - [Executive synthesis and reading guide](docs/omni-jev/README.md)
 - [Architecture and typed output contract](docs/omni-jev/design.md)
 - [Experiments, metrics, and decision gates](docs/omni-jev/experiments.md)
@@ -32,3 +34,7 @@ Reuse components and interfaces from **GLiClass/GLiFormer**, **ColBERT/colpali_e
 5. Write repository documentation, code, and issue discussions in English. Evaluate language support rather than assuming it from documentation language.
 
 Omni-JEV is an independent project. The name does not imply affiliation with TypeSafe AI or any upstream model provider. An implementation license and compatibility claim have not been selected by this planning package.
+
+## Publication status
+
+The initial documentation and publication tooling are committed to `main`. All 13 planning issues have been created and read back from GitHub. See [PUBLICATION_RESULT.json](PUBLICATION_RESULT.json) for the issue mapping and verification record. The analysis is maintained in the modular documents above; the standalone dossier export repeats those documents and issue drafts and is not duplicated here. Model implementation, training, and benchmarks remain future work.

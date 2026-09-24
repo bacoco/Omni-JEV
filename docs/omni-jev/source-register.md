@@ -8,7 +8,7 @@ Prepared on **2026-09-24**. Links identify primary project/model documentation u
 - **Partial verification:** a primary project/search/paper listing supports the general lead, but the exact artifact was not independently loaded or fully inspected.
 - **Conversation lead:** preserved from the preceding discussion; details require verification before use.
 
-A browser cache miss or access error is not evidence that a repository is absent, private, deleted, or unreleased. It is an access limitation. The target `bacoco/Omni-JEV` could not be inspected through the unauthenticated browsing attempt, and the GitHub integration was not connected when this package was prepared. No existing files, branch, settings, issues, or permissions were established. This package must not be represented as already committed or published.
+A browser cache miss or access error is not evidence that a repository is absent, private, deleted, or unreleased. It is an access limitation. The target `bacoco/Omni-JEV` could not be inspected through the unauthenticated browsing attempt, and the GitHub integration was not connected when this package was prepared. No existing files, branch, settings, issues, or permissions were established during that preparation pass. Publication was subsequently performed through the authenticated integration; see [PUBLICATION_RESULT.json](../../PUBLICATION_RESULT.json). This changes the publication status, not the model/source verification limits recorded below.
 
 ## S01 — TypeSafe Jev interface
 

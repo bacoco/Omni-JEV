@@ -2,7 +2,8 @@
   "schema_version": 1,
   "target_repository": "bacoco/Omni-JEV",
   "prepared_at": "2026-09-24",
-  "publication_status": "not_published",
+  "publication_status": "published",
+  "publication_report": "../../PUBLICATION_RESULT.json",
   "issues": [
     {
       "id": "OJ-001",
