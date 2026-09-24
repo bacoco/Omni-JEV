@@ -19,6 +19,23 @@ The target is a question-conditioned, non-generative decision model. Encode an i
 - [Prioritized issue backlog](planning/omni-jev/ROADMAP.md)
 - [Publication instructions](PUBLISHING.md)
 
+## First implemented component
+
+[Typed API contract v0.1](docs/omni-jev/typed-api.md) provides validated Noul,
+Choice and Score requests/responses, source-level evidence metadata, isolated
+logit postprocessing, and exportable JSON Schemas. This is a tested contract
+library, **not a trained model or an HTTP inference service**.
+
+```bash
+python -m pip install -e '.[test]'
+python -m pytest -q
+python examples/typed_decisions.py
+python -m omni_jev.schemas /tmp/omni-jev-schemas
+```
+
+The example uses synthetic logits only. Model selection, media processing,
+training, and evaluation remain in the linked issue backlog.
+
 ## Initial direction
 
 Evaluate **Ovis-Omni-Embedding-3B** as the principal candidate for the full modality scope. Keep **Ovis-VL-Embedding-2B** as a visual-only comparison. Preserve the native global embedding baseline before adapting intermediate states into a multi-vector memory. Compare a native text branch with a BERT-like condition encoder; compare discriminatively trained late interaction with a small cross-attention decision module.
