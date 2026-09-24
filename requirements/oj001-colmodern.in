@@ -1,0 +1,6 @@
+# Optional integration starting point, NOT a resolved/tested environment lock.
+# Install only in an isolated environment after reviewing the upstream revision.
+# Its pyproject requires Python >=3.10,<3.15, transformers >=5.3.0,<6.0.0,
+# torch >=2.2.0,<2.14.0 and peft >=0.18.0,<0.21.0, among other dependencies.
+# Resolve and record ALL transitive versions before admitting a native baseline.
+colpali-engine @ git+https://github.com/illuin-tech/colpali.git@97487f8871ff4d5d2284411fe61bdcd2cfe99894

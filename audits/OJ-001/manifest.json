@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "issue": "OJ-001",
+  "audit_date": "2026-09-24",
+  "base_commit": "653d9a6e72277ed9144a05a171bf147352b0274d",
+  "status": "partial_static_audit_runtime_blocked",
+  "project_license_selected": false,
+  "evidence_policy": "Code and Git blob identities observed through authenticated GitHub connector. HF model-card/tree observations may be cached. No runtime success, weight digest, processor parity or calibrated decision quality inferred from them.",
+  "components": [
+    {
+      "id": "ovis_omni_code",
+      "repo_id": "ATH-MaaS/Ovis-Omni-Embedding",
+      "revision": "c46bd3603cfdf539754694a0c7b9753819386e4b",
+      "license_observation": "Apache-2.0 declaration in README; not a weight-file license verification.",
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "git_blob_sha1": "4ff735cc9f32b65a065b7ae398bcd08453303ad5",
+          "evidence_url": "https://github.com/ATH-MaaS/Ovis-Omni-Embedding/blob/c46bd3603cfdf539754694a0c7b9753819386e4b/README.md"
+        }
+      ],
+      "reuse": "Retain native multimodal processing and Thinker path once a checkpoint and inference implementation are verified. This inspected README is not inference code.",
+      "runtime_status": "not_run"
+    },
+    {
+      "id": "ovis_vl_code",
+      "repo_id": "ATH-MaaS/Ovis-VL-Embedding",
+      "revision": "48019b2d9342de28af715488e66f0c31ceb8aceb",
+      "license_observation": "Apache-2.0 declaration in README; not a weight-file license verification.",
+      "inspected_files": [
+        {
+          "path": "README.md",
+          "git_blob_sha1": "50a92a5f67159681dfaf87656b8403390c7e6b4d",
+          "evidence_url": "https://github.com/ATH-MaaS/Ovis-VL-Embedding/blob/48019b2d9342de28af715488e66f0c31ceb8aceb/README.md"
+        }
+      ],
+      "reuse": "Visual-only candidate. Explicit upstream exclusion: video audio is not processed. Do not route speech questions through this model.",
+      "runtime_status": "not_run"
+    },
+    {
+      "id": "colpali_engine",
+      "repo_id": "illuin-tech/colpali",
+      "revision": "97487f8871ff4d5d2284411fe61bdcd2cfe99894",
+      "license_observation": "MIT; LICENSE text inspected. Model weights require their own audit.",
+      "inspected_files": [
+        {
+          "path": "colpali_engine/models/modernvbert/colmodernvbert/modeling_colmodernvbert.py",
+          "git_blob_sha1": "f8bb5fe36c175d35a14b07a011e1ce3ec6beb112",
+          "evidence_url": "https://github.com/illuin-tech/colpali/blob/97487f8871ff4d5d2284411fe61bdcd2cfe99894/colpali_engine/models/modernvbert/colmodernvbert/modeling_colmodernvbert.py"
+        },
+        {
+          "path": "colpali_engine/models/modernvbert/colmodernvbert/processing_colmodernvbert.py",
+          "git_blob_sha1": "3d709113be9e96a23671d96d138626467b5f49ed",
+          "evidence_url": "https://github.com/illuin-tech/colpali/blob/97487f8871ff4d5d2284411fe61bdcd2cfe99894/colpali_engine/models/modernvbert/colmodernvbert/processing_colmodernvbert.py"
+        },
+        {
+          "path": "pyproject.toml",
+          "git_blob_sha1": "4f26508b5cb39b8306d1bc32c8ad140cd76edc45",
+          "evidence_url": "https://github.com/illuin-tech/colpali/blob/97487f8871ff4d5d2284411fe61bdcd2cfe99894/pyproject.toml"
+        },
+        {
+          "path": "LICENSE",
+          "git_blob_sha1": "c67416730fed7bab154d250168c820fcc27eff97",
+          "evidence_url": "https://github.com/illuin-tech/colpali/blob/97487f8871ff4d5d2284411fe61bdcd2cfe99894/LICENSE"
+        }
+      ],
+      "reuse": "Reuse native processor and model for compact baseline. Projection is 128-dimensional, L2-normalized, attention-masked; image-only masking is optional. Current code imports native Transformers ModernVBertModel and requires transformers>=5.3.0,<6.0.0. Do not use the old model-card vbert branch recipe as the environment lock.",
+      "runtime_status": "not_run"
+    },
+    {
+      "id": "gliformer",
+      "repo_id": "Knowledgator/GLiFormer",
+      "revision": "b5c0a0fd2aacff64736fbfa0bac0bdcc032d5eff",
+      "license_observation": "Apache-2.0; LICENSE header inspected, full-file Git hash recorded.",
+      "inspected_files": [
+        {
+          "path": "gliformer/encoders/vision.py",
+          "git_blob_sha1": "9abadd27a3a208778d17baa8680113054c2dc980",
+          "evidence_url": "https://github.com/Knowledgator/GLiFormer/blob/b5c0a0fd2aacff64736fbfa0bac0bdcc032d5eff/gliformer/encoders/vision.py"
+        },
+        {
+          "path": "LICENSE",
+          "git_blob_sha1": "f49a4e16e68b128803cc2dcea614603632b04eac",
+          "evidence_url": "https://github.com/Knowledgator/GLiFormer/blob/b5c0a0fd2aacff64736fbfa0bac0bdcc032d5eff/LICENSE"
+        }
+      ],
+      "reuse": "Reuse VisionEncoderOutput and mask handling. Contract expects prefix tokens followed by a dense grid. VisionBiEncoder delegates to MediaBiEncoder with mean-pooled text labels. Interleaved Ovis audio/video/text is not a plain dense image grid; write an explicit adapter, not a model-name substitution.",
+      "runtime_status": "not_run"
+    },
+    {
+      "id": "gliclass",
+      "repo_id": "Knowledgator/GLiClass",
+      "revision": "40baa67cdea577449bc3f6a251646377b2cb0a6c",
+      "license_observation": "Apache-2.0; LICENSE header inspected, full-file Git hash recorded.",
+      "inspected_files": [
+        {
+          "path": "gliclass/config.py",
+          "git_blob_sha1": "dd11728079befa8de3e06fc33e7e8a21b440fb72",
+          "evidence_url": "https://github.com/Knowledgator/GLiClass/blob/40baa67cdea577449bc3f6a251646377b2cb0a6c/gliclass/config.py"
+        },
+        {
+          "path": "LICENSE",
+          "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "evidence_url": "https://github.com/Knowledgator/GLiClass/blob/40baa67cdea577449bc3f6a251646377b2cb0a6c/LICENSE"
+        }
+      ],
+      "reuse": "Reuse dynamic class markers and architecture/scorer configuration. Config inspection only, not all model implementations. Unknown encoder configs can call AutoConfig.from_pretrained with trust_remote_code=True; review that path and pin nested encoder dependencies before execution.",
+      "runtime_status": "not_run"
+    },
+    {
+      "id": "laya_code",
+      "repo_id": "NandhaKishorM/laya",
+      "revision": "23a17522aa4942da6cce53a995a275760320b691",
+      "license_observation": "Apache-2.0; LICENSE header inspected, full-file Git hash recorded.",
+      "inspected_files": [
+        {
+          "path": "laya/common.py",
+          "git_blob_sha1": "6c4c426e64eb9660c97d40bc64c227e8c7e71361",
+          "evidence_url": "https://github.com/NandhaKishorM/laya/blob/23a17522aa4942da6cce53a995a275760320b691/laya/common.py"
+        },
+        {
+          "path": "LICENSE",
+          "git_blob_sha1": "d9a10c0d8e868ebf8da0b3dc95bb0be634c34bfe",
+          "evidence_url": "https://github.com/NandhaKishorM/laya/blob/23a17522aa4942da6cce53a995a275760320b691/LICENSE"
+        }
+      ],
+      "reuse": "Reuse described-option rendering, marker positions, per-question masks and shared scorer concepts. build_sequence combines state and question: tokenization reuse is not encoder-memory reuse. Keep max-probability and normalized-entropy diagnostics distinct. No empirical calibration guarantee is imported.",
+      "runtime_status": "not_run"
+    },
+    {
+      "id": "decider_code",
+      "repo_id": "Mapika/decider",
+      "revision": "b44b4c9880a67291206499b86aac89004850134a",
+      "license_observation": "Apache-2.0; LICENSE header inspected, full-file Git hash recorded.",
+      "inspected_files": [
+        {
+          "path": "decider/vision/model.py",
+          "git_blob_sha1": "78c671097ec3544b0d42bce7c2ca6a2e2275ea1b",
+          "evidence_url": "https://github.com/Mapika/decider/blob/b44b4c9880a67291206499b86aac89004850134a/decider/vision/model.py"
+        },
+        {
+          "path": "LICENSE",
+          "git_blob_sha1": "916a53c7ffc9b1050cfd29ee07d3a4f619b540e5",
+          "evidence_url": "https://github.com/Mapika/decider/blob/b44b4c9880a67291206499b86aac89004850134a/LICENSE"
+        }
+      ],
+      "reuse": "Candidate existing visual-decision control. It selects language-head rows for letter answers. Not a drop-in Ovis embedding head after LM-head removal. Native processor calls in the inspected constructor do not accept revision arguments; a pinned local snapshot would be required. Do not run its unrelated game demo.",
+      "runtime_status": "not_run"
+    }
+  ],
+  "models": [
+    {
+      "id": "ovis_omni_3b",
+      "repo_id": "ATH-MaaS/Ovis-Omni-Embedding-3B",
+      "revision": null,
+      "observed_revision_hint": null,
+      "declared_modalities": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "audio_video"
+      ],
+      "author_or_code_claims_not_measurements": {
+        "backbone": "Qwen2.5-Omni-3B",
+        "pooling": "last non-padding final hidden state",
+        "embedding_width": 2048,
+        "generation_heads": "Talker and LM head removed, per README"
+      },
+      "sources": [
+        "https://github.com/ATH-MaaS/Ovis-Omni-Embedding/blob/c46bd3603cfdf539754694a0c7b9753819386e4b/README.md",
+        "https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B"
+      ],
+      "runtime": {
+        "status": "blocked",
+        "reason": "The execution container could not resolve huggingface.co. No weights were downloaded or executed. Browser failures do not establish non-release. Pinned README still announces weights to come; live HF inventory was inaccessible, so that statement is not treated as proof of current artifact absence.",
+        "tested_modalities": [],
+        "output_shapes": null
+      }
+    },
+    {
+      "id": "ovis_vl_2b",
+      "repo_id": "ATH-MaaS/Ovis-VL-Embedding-2B",
+      "revision": null,
+      "observed_revision_hint": null,
+      "declared_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "author_or_code_claims_not_measurements": {
+        "backbone": "Qwen3.5-2B",
+        "pooling": "last non-padding final hidden state",
+        "embedding_width": 2048,
+        "audio": "explicitly not processed, including video soundtrack"
+      },
+      "sources": [
+        "https://github.com/ATH-MaaS/Ovis-VL-Embedding/blob/48019b2d9342de28af715488e66f0c31ceb8aceb/README.md",
+        "https://huggingface.co/ATH-MaaS/Ovis-VL-Embedding-2B/tree/main"
+      ],
+      "runtime": {
+        "status": "blocked",
+        "reason": "The execution container could not resolve huggingface.co. No weights were downloaded or executed. Browser failures do not establish non-release. User/prior conversation reported weights in model/. Neither that subfolder nor weight hashes could be reverified in this pass. Do not invent them or interpret the access failure as removal.",
+        "tested_modalities": [],
+        "output_shapes": null
+      }
+    },
+    {
+      "id": "colmodernvbert",
+      "repo_id": "ModernVBERT/colmodernvbert-merged",
+      "revision": null,
+      "observed_revision_hint": "4a0a9f3ac7a7992fec410bfa8e3d080ac9a5bcee",
+      "declared_modalities": [
+        "text",
+        "image"
+      ],
+      "author_or_code_claims_not_measurements": {
+        "pooling": "per-token projection and normalization, no global pooling in inspected model forward",
+        "embedding_width": 128,
+        "processor": "ColModernVBertProcessor; native Idefics3 processing, left text padding"
+      },
+      "sources": [
+        "https://huggingface.co/ModernVBERT/colmodernvbert-merged/tree/main",
+        "https://github.com/illuin-tech/colpali/blob/97487f8871ff4d5d2284411fe61bdcd2cfe99894/colpali_engine/models/modernvbert/colmodernvbert/modeling_colmodernvbert.py"
+      ],
+      "runtime": {
+        "status": "blocked",
+        "reason": "The execution container could not resolve huggingface.co. No weights were downloaded or executed. Browser failures do not establish non-release. Historical HF tree lists config, processor, tokenizer and model.safetensors (~1.01 GB), but file digests and a pinned live inventory were not retrieved. The observed tree revision is only a hint.",
+        "tested_modalities": [],
+        "output_shapes": null
+      }
+    },
+    {
+      "id": "laya",
+      "repo_id": "convaiinnovations/laya",
+      "revision": null,
+      "observed_revision_hint": null,
+      "declared_modalities": [
+        "text"
+      ],
+      "author_or_code_claims_not_measurements": {
+        "backbone": "ModernBERT-large at root, per model card",
+        "scoring": "per-option markers with a shared scorer",
+        "limits": "question/option token budgets; confidence is not guaranteed correctness"
+      },
+      "sources": [
+        "https://huggingface.co/convaiinnovations/laya",
+        "https://github.com/NandhaKishorM/laya/blob/23a17522aa4942da6cce53a995a275760320b691/laya/common.py"
+      ],
+      "runtime": {
+        "status": "blocked",
+        "reason": "The execution container could not resolve huggingface.co. No weights were downloaded or executed. Browser failures do not establish non-release. Source implementation is pinned, but weight revision and all nested encoder/tokenizer dependencies remain unresolved. No automatic multi-checkpoint Router preload.",
+        "tested_modalities": [],
+        "output_shapes": null
+      }
+    },
+    {
+      "id": "decider_vision",
+      "repo_id": "Mapika/decider-2b-vision",
+      "revision": null,
+      "observed_revision_hint": null,
+      "declared_modalities": [
+        "text",
+        "image"
+      ],
+      "author_or_code_claims_not_measurements": {
+        "scoring": "LM-head letter rows at answer slots, per inspected source",
+        "embedding_width": null
+      },
+      "sources": [
+        "https://huggingface.co/Mapika/decider-2b-vision",
+        "https://github.com/Mapika/decider/blob/b44b4c9880a67291206499b86aac89004850134a/decider/vision/model.py"
+      ],
+      "runtime": {
+        "status": "blocked",
+        "reason": "The execution container could not resolve huggingface.co. No weights were downloaded or executed. Browser failures do not establish non-release. HF model page retrieval also failed. Code existence is not proof that this checkpoint can be loaded.",
+        "tested_modalities": [],
+        "output_shapes": null
+      }
+    }
+  ]
+}
