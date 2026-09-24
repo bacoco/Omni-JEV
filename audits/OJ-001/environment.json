@@ -1,0 +1,18 @@
+{
+  "python": "3.13.5",
+  "platform": "Linux",
+  "packages": {
+    "torch": "2.10.0+cpu",
+    "torchvision": "0.25.0+cpu",
+    "transformers": null,
+    "colpali-engine": null,
+    "peft": null,
+    "Pillow": "12.3.0",
+    "numpy": "2.3.5",
+    "huggingface-hub": "1.16.1",
+    "safetensors": "0.7.0",
+    "pytest": "9.0.2"
+  },
+  "inference_tested": false,
+  "note": "Presence is not import compatibility. This command does not load a model."
+}

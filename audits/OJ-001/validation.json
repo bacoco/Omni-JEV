@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "issue": "OJ-001",
+  "audit_date": "2026-09-24",
+  "status": "partial_static_audit_runtime_blocked",
+  "local_validation": {
+    "command": "python -m pytest -q tests/test_omni_jev_audit.py tests/test_omni_jev_publish_issues.py",
+    "passed": 44,
+    "subtests_passed": 32,
+    "new_tests": 33,
+    "existing_publication_tests": 11,
+    "python": "3.13.5",
+    "pytest": "9.0.2",
+    "additional_commands": [
+      "python -m unittest discover -s tests -p test_omni_jev_audit.py -v",
+      "python scripts/omni_jev_audit.py validate audits/OJ-001/manifest.json",
+      "python -m py_compile scripts/omni_jev_audit.py scripts/omni_jev_smoke_colmodernvbert.py"
+    ]
+  },
+  "actual_metadata_resolution_attempt": {
+    "command": "python scripts/omni_jev_audit.py resolve-hf ATH-MaaS/Ovis-VL-Embedding-2B --output /mnt/data/oj001-work/ovis-vl.snapshot.json",
+    "exit_code": 2,
+    "error": "metadata transport failure: URLError; no release conclusion",
+    "snapshot_created": false
+  },
+  "native_pretrained_runs": [],
+  "weights_downloaded": false,
+  "hosted_ci": "not_yet_observed_for_this_change",
+  "limitations": [
+    "No model-quality benchmark, training, native pooling parity, measured model tensor shapes or audio/video fixture run completed.",
+    "Passing offline tests validates audit infrastructure, not neural capabilities.",
+    "Source and optional dependency recipe pins are not a fully solved runtime environment."
+  ],
+  "unchanged_files_verified_against_main": {
+    "scripts/omni_jev_publish_issues.py": "e67d7ab26adbc652b8d5a21cb33916daaa8588da",
+    "tests/test_omni_jev_publish_issues.py": "457217bb0bfb4113372b92ea9cf49f5afa5adbbd"
+  }
+}
